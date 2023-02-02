@@ -1,0 +1,68 @@
+# # HTML CODE
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Centered Container with Boxes</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="sub-box">1</div>
+        <div class="sub-box">2</div>
+        <div class="sub-box">3</div>
+      </div>
+      <div class="box">
+        <div class="sub-box">4</div>
+        <div class="sub-box">5</div>
+        <div class="sub-box">6</div>
+      </div>
+      <div class="box">
+        <div class="sub-box">7</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+# # CSS CODE 
+
+body {
+  background-color: lightgray;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-box {
+  background-color: white;
+  width: 60%;
+  height: 30%;
+  margin: 10px;
+  text-align: center;
+}
