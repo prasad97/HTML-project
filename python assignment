@@ -1,0 +1,23 @@
+# # python assignment 
+
+Create a program that generates random fortune cookie messages.
+
+The program should display one of three messages each time it is run: "Today will be a lucky day", "You will meet someone new and interesting", or "Watch out for obstacles in your path".
+
+To do this, you can use the random module and the if and elif statements to select one of the messages at random.
+
+#### CODE .....
+
+import random
+
+def fortune_cookie():
+    message = random.randint(1,3)
+    if message == 1:
+        print("Today will be a lucky day")
+    elif message == 2:
+        print("You will meet someone new and interesting")
+    elif message == 3:
+        print("Watch out for obstacles in your path")
+
+if __name__ == '__main__':
+    fortune_cookie()
